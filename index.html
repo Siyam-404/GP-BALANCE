@@ -1,164 +1,189 @@
-<?php
-$O00OO00 = "
- * ============================================
- * Mr999Plus PHP Encoder Script
- * ============================================
- * 
- * ABOUT:
- * --------
- * This PHP Encoder is designed to securely encode data, shuffle characters, and manage 
- * data positions to make encoded content unreadable without a proper key. This encoder 
- * can be used for obfuscating sensitive data, protecting information from unauthorized 
- * access, and ensuring data integrity during transfer or storage.
- *
- * FEATURES:
- * ----------
- * - Encode strings into mixed and shuffled formats.
- * - Remove duplicate data entries automatically.
- * - Generate a key for decoding the encoded data back to its original format.
- * - Flexible design to support various data formats and encoding requirements.
- *
- * DEVELOPER INFO:
- * ----------------
- * Developer: Samiul Alim
- * Version: 1.0
- * Date: 2024-12-18
- * 
- * CONTACT:
- * ---------
- * - Email: samiulalim1230@gmail.com
- * - Telegram: https://t.me/samiulalim1230
- * - GitHub: https://github.com/samiulalim1/
- * - Telegram Channel: https://t.me/mr999plus
- *
- * LICENSE:
- * ---------
- * This script is licensed under the MIT License. You are free to modify, distribute, and 
- * use this script with proper attribution to the developer.
- *
- * DISCLAIMER:
- * ------------
- * This encoder is provided as-is without any warranties. The developer is not responsible 
- * for any misuse or data loss resulting from the use of this script.
- *
- * ENCODER ID : [JZQ5j-8415bacb4b-MjAyNC0xMi0xOCAwODowNDoyMg-8812a]
- * 
- * ============================================
-";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-$O00OO00 = str_replace(["\r\n", "\n", "\r"], "**", $O00OO00);
-$OO0O0O0 = $O00OO00[1523].$O00OO00[145].$O00OO00[1524].$O00OO00[507];
-$OO0O0O0 .= $O00OO00[54].$O00OO00[76].$O00OO00[144].$O00OO00[965].$O00OO00[1525];
-$OO0O0O0 .= $O00OO00[76].$O00OO00[144].$O00OO00[964].$O00OO00[54].$O00OO00[79].$O00OO00[144];
-$OO00000 = $O00OO00[817].$O00OO00[426].$O00OO00[275].$O00OO00[60].$O00OO00[54].$O00OO00[275];
-$OOOO0O0 = $O00OO00[60].$O00OO00[817].$O00OO00[426].$O00OO00[1197].$O00OO00[60].$O00OO00[817];
-$OOOO0O0 .= $O00OO00[426].$O00OO00[1525].$O00OO00[305].$O00OO00[1523].$O00OO00[145].$O00OO00[1197];
-$O00O0O0 = $O00OO00[79].$O00OO00[144].$O00OO00[964].$O00OO00[817].$O00OO00[76].$O00OO00[144].$O00OO00[964];
-$O00O0O0 .= $O00OO00[143].$O00OO00[917].$O00OO00[144].$O00OO00[964].$O00OO00[54].$O00OO00[204].$O00OO00[144];
-$OO0O0O0 .= $O00OO00[204].$O00OO00[512].$O00OO00[79].$O00OO00[144].$O00OO00[964].$O00OO00[512].$O00OO00[917];
-$OOOO0O0 .= $O00OO00[1526].$O00OO00[54].$O00OO00[1527].$O00OO00[189].$O00OO00[60].$O00OO00[54].$O00OO00[275];
-$OO00000 .= $O00OO00[68].$O00OO00[964].$O00OO00[1523].$O00OO00[145].$O00OO00[1524].$O00OO00[806].$O00OO00[1523];
-$O00O0O0 .= $O00OO00[965].$O00OO00[54].$O00OO00[204].$O00OO00[144].$O00OO00[965].$O00OO00[817].$O00OO00[204].$O00OO00[144];
-$OOOO0O0 .= $O00OO00[1525].$O00OO00[60].$O00OO00[817].$O00OO00[426].$O00OO00[141].$O00OO00[60].$O00OO00[817].$O00OO00[426];
-$OO00000 .= $O00OO00[145].$O00OO00[70].$O00OO00[204].$O00OO00[1523].$O00OO00[145].$O00OO00[1524].$O00OO00[917].$O00OO00[1523];
-$OO0O0O0 .= $O00OO00[144].$O00OO00[964].$O00OO00[54].$O00OO00[145].$O00OO00[144].$O00OO00[60].$O00OO00[817].$O00OO00[144].$O00OO00[54];
-$O00O0O0 .= $O00OO00[964].$O00OO00[512].$O00OO00[1527].$O00OO00[1525].$O00OO00[60].$O00OO00[54].$O00OO00[275].$O00OO00[816].$O00OO00[60];
-$OOOO0O0 .= $O00OO00[189].$O00OO00[60].$O00OO00[817].$O00OO00[426].$O00OO00[144].$O00OO00[60].$O00OO00[817].$O00OO00[426].$O00OO00[68].$O00OO00[60];
-$O00O0O0 .= $O00OO00[817].$O00OO00[1527].$O00OO00[1197].$O00OO00[426].$O00OO00[817].$O00OO00[204].$O00OO00[144].$O00OO00[964].$O00OO00[1525].$O00OO00[1525];
-$OO00000 .= $O00OO00[145].$O00OO00[1197].$O00OO00[885].$O00OO00[1523].$O00OO00[145].$O00OO00[1197].$O00OO00[965].$O00OO00[143].$O00OO00[76].$O00OO00[144].$O00OO00[883].$O00OO00[512];
-/*
- * ============================================
- * Mr999Plus PHP Encoder Script
- * ============================================
-*/
-$OO0O0OO = $OO0O0O0.$OOOO0O0.$OO00000.$O00O0O0; $OO0O0O0 = "";
-$OO0O00O = base64_decode($OO0O0OO); $O00OO0 = urldecode($OO0O00O);
-$OO00OO0 = [29,34,34,26,36,26,36,26,36,26,36,26,36,42,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,35,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,27,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,45,40,20,9,33,51,15,57,11,22,2,44,10,50,13,21,8,12,23,56,14,19,53,41,25,28,52,55,16,18,24,38,34,34,34,17,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,34,39,5,34,34,34,34,58,37,34,34,34,34,34,34,34,49,7,4,48,59,34,34,34,34,34,34,34,54,32,43,46,34,34,6,47,34,1,3,34,31,36,26,36,26,36,26,36,26,36,26,30,0];
-/*
- * ============================================
- * Mr999Plus PHP Encoder Script
- * ============================================
-*/
-$O00O0O0 = [
-	"y9GdhN2c1ZmYPBCUIBFIzVHbQlTO5IXTgcmbpRWYvx0J98FJ7ciZ05WayB3J981XkACIgACIgACI",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgszJ1Z0VaNnT",
-	"2UTTO5GcRR1RwMmSJ5EcolkZxBzQ1ZXQLxmQ2VEa15mNqlWd4E3Tvo0VOVHc3cUYkFDOzt2RYJlarsiZhJVeCN2YWJncnlTQF5Gb",
-	"yg1a1clWmpkMiBCIgAyJ981Xf91XkACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"f9FJo81Xk0zXf91Xf9FJgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"f91Xk0zXf91Xf91Xf91XkACIgACIgACIK0wOp81Xf91Xf91Xf91Xf91XkgyXfRSPf91Xf91Xf91Xf91Xf9FJgACIgACIgACIgACI",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIK0wOn0TRHpVaxcVWzlTMYdSPf91Xf91Xf91Xf91Xf91Xf91XkoQD",
-	"sM3ZyF0ckgSYkJWbhx2XfBibvlGdj5WdmtXKpcSYkJWbhx2XfdCKzR3cphXZf52bpR3YuVnZhgiZpBCIgACIgACIgACI7kyXf91X",
-	"NBTTkhDajh2RzgUcPJjcstSTMxmYERUbyUnMwUjWYJzbyFnct9CdwpmTMBzRMZXaN9kb1p1KsVXRzglcTJTViRFSoFFSuZ3RlJTe",
-	"4xGR3RVT29UYlNGdDZ2KrEGc4N1RlJjSuZnWQFUewQEWCJ2dPNjdYNEaWREb6RmTFpGb5NVdjl0aJ52bwY3bvgWU2AHM61GZ2xGe",
-	"xcjUxQ1ZZRmbxBTcxVTVONTexdTV3cUbYNnSMR1LyVDOxoncyQme2kWc0RmUTp2dwsWUhNmYXZzTxJWSqZFTSR2UzcHSu1WbSNzY",
-	"tp3c1MXTzxmRKBVZGZHc5lHeaVVah9ETxlmSwQDU3UVWOd1R6xWR2NTaiZDOr80NThnZxQHNzBVRzolNx0mV4p1VvwGSkp0ViRlW",
-	"1IWeudDd3tSTH9EdhtWREJXbjFHeYN2Z5xkUyknTqlDbrVUNMhkUr12TPJjRUNlUhJDbMZzLBRlYFp0V2AlWz5Wd0RnMstibQdDZ",
-	"TF3MyIkQzZzTwkGNBB1b1gHVrdWewtCVZVnQxRHUzQGVlBTM5J0LHlkWU5GTqNWUXh0VU1UZwFnSRVzQ1omUrkmMPZ3R2kDWXtiY",
-	"vNHOsl1aMJXejNEZ0EEdsl3YvJFdZN2awl1LodUU1FjSRR0TMFkVjJjMId3Y2ZzZ5QFNpJGb3FWbPxmeLhGa3Y2NjpFbOhTayQWW",
-	"1FEMOV2KHRUW0lDM2F1RBBXOCVnMUJVYjFDOHVka48UMj5mU1kzda5EW4MWSKpkUiZmTvhFarEnZy8Wbpp3K2EWVjFlZthVWZl1b",
-	"zV2MoZnMEJTNrA1Y5QEOUVjaQRWW3RlcH1kb2NDezVjMaVmartSbtBjNiFjMWVTczkWSj1GdzYzdipnSk50KZdHMwk2SlpUbHdXM",
-	"gACIgACIgACI7kyXf91XfRCKf9FJ981Xf91XkACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"4ZUQadXTD1GOO1WQPd2MpJjV5JGbQVEOvAzKxZWVZBzb2RHbXRncOV2J98FJgACIgACIgACIgACIgACIgACIgACIgsTKf91XkgyX",
-	"GpEd0oGbwhncaZTbW1kV2dDT4c1dLpEVWple4x0YINEdR9UdQFjQq9SNsVkR3o2LJpGShRnWyRHZat2V2MmN3R1aIVTTNVDUxkkU",
-	"mVXOmZXO3g2NqZlNvgDUoV3LhdHUDd1arZGWLpVQ0IGT4QTah9GWBVDWINWT5VGOlJXNyJlc5gFWipXdHRVdml3MtVnbUVHV54GO",
-	"NR0R38mWEFzUVtSM1EWcLVEWvl3V0YkdPRjYxlTWN50U2FTN5oUM5AFaGBTUYVURYF1Krx0LspGTStyNU9GeEtkdBdDNGVHZnBlZ",
-	"SFzZRFXOwYDS5ckU1QnUyYTMZZ2Zi9WbwkFdmR1MMd1MCpFMzkVexo2ThBXUkFFR5Rzdo1WNxU3bItUdvVjRHljVVhGVrQTYzAlQ",
-	"3AnbwZ1Vk9mTqdGeUFmS5YVYXVEZNNUdihkMjJmYOpkN3o3b1oWUyJzM3lEMzkFd29Gd3Zjcxd1dxV1Kwg3RWBHenVjTNhkVQVlY",
-	"fRSPf91XkACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"xdzVWNzUXVzZVh2UwsmVSRVQCZzbqJTNqV1UyMkTOp0MJB1KIhGU0cGRPRzZIV2RIpmbhplYWx2c5MnN2I3K3lmeV10L4B1Y3JES",
-	"K0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gC",
-	"gACIgACIgACIgACIgACIgACIgAyOpgyXf91XfRCIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"j1WOQtSY4YnaPRzZE9ENnR0T0cGRwdnSoJXY5lnSwFXd2x2QzJnbjFnV2s2Qw10UvxUYlhWUHBnYZtkMmRDRPRzZEtCU4B3M1wEO",
-	"==wOf91Xf91Xf9FJgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"NoQDK0gCNoQDK0gCNoQDgACIgACIgAiCNszJhJTM4gTLn1UevRkT39GRPdXQD9EewkWT4BzQOlXQq1ULiRjYjFmY1EDN4AiOElEI",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgoQDK0gCNoQDK0gC",
-	"n0zXf91XkACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"VRjc6xEOWVlS1M0LrR0YvQGbqZHOlNkM1Q3NGVDOVVGM5U3V28EcPh3V1FTNxNWVOpWQwAFd482Ml9EdtFGUSVHV3NXVxsEWzg2M",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIg8GajVGIgACIgACIgACI",
-	"NoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQD",
-	"f91Xf91Xf91Xf91Xf91Xf91XkACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI7kyXf91XkgyXfRSPf91XfRCIgACIgACIgACI",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgsTKf91Xf91Xf91Xf91Xf9FJscyXkcCKf91Xf91Xf91Xf91Xf91X",
-	"kACIgACIgACIK0wOn0zZTJ3br8yQ34mcmplN5NTS5czNOxmWm5mNyNzMnBXYvIWNQFTev80KEp1L3Znam9CdSB1NqljdzlTWzwkZ",
-	"6tScq1mZHlWVt9UWxRmNCJWbxoFdxtCTNhkSJhWMvpEdBpEephDZEdFdsVFMr1WVr52Qo1GNzl3THx2TLpEVP1mUVVnSahUTvoUZ",
-	"K0gCNoQDK0gCNoQDK0gCNoQDK0gCNoQDgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgAyOn0TUuNGaSNzYmpkMiBCIn0zXf9FJgACIgACIgACIgACIgACIgACIgAyO",
-	"x9iR2REMmdFaSFTYENDWaJUT0UFVIlXe0Z0dhB1SSNjRMJ1TGlnentmMPtSNV9kVY9EauNWV05mRyJne6BDe0BTcN5GVYdzQSNDR",
-	"gACIgACIgACIgACIgACIgACIK0wOpgyXf91Xk0zXf91Xf91XfRCI7kSKp8FJo81XkgyXf91Xf9FJo81Xf91Xf91Xf9FJ7kCKf91X",
-	"nonTYpVeChlY25UbiFDczoFIn0zXf91Xf9FJgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"7cSP9c3TwhjRK92dXllMWdUS1pEWkBjVtN2J981Xf91Xf91Xf91Xf91XkACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI",
-	"gACIgACIgACIgAyOgACIgACIgACIgACIgACIgACIgACIgACIgACInUGZvNWZk9FN2U2chJ2JgACIgACIgACIgACIgACIgACIgACI",
-	"gACIgACIgACIgACIgACI913OpIyO91XZk92QzRye7lycnJXQzRCKu9Wa0Nmb1ZGIuJXd0VmcigCbhZXZg4mc1RXZytXKlR2bDNHJ",
-	"Dx0K4tGePFVYPVFR1cVep5UWIJmY2M3LyhlMElXRlNmMlZHR4kWMXhkVkF2VaNTYmtidXlDSENDVuhTVYVTZslEVwETWhpkQw9iN",
-	"pN2KtpUa2YGOwo2VjJXQVRzUWRjWlRXN4c1ZThzSmhkcm5Eead3MFdWU1BlSyYmZ3oFek5GcoZmRzIkc050SyljdaFnRwtyZzJ0K",
-	"3AVan9kYIZzK6NXdBV0bj9WevV0VrJnN2RjdBZ2YUpVVyJDSQZndOhXO0gneIZDNzczMaRDSQNGN3h0UNxmQM9EbXplZ38idpdEd",
-	"z8kbVBXYatmWopVNTVGRvclRyFVc2M2Q4c2UJ5GRuBVNVpXOHVVZM1USHZ3YlFHbxUGdOZFd3l3a2U0QWdDaZFXUHZjVhlnMVtGV",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgAyOnonUuJGbS5mY25kMYBjVyolZKJjY",
-	"1FjSXZUYhpEU5Y0bLVlcvNFb5AzaaRnYLZmVKZWcFhnU4IXd4dnZvN0VlFDUYhzatpmZ5dFMnBVZ1hUTrRVZql0L5N3bQBTOihTZ",
-	"yUUVhJXSrY0c4hVW3lESBtmNCJ0dqNzSyB1azpEWn1GWZ52aw9Ebxw0LuxEeJZmQ1JndtlHVQZHOSZWZkJVT5VmYBJVb2h2Q2oEZ",
-	"wlGcaBnQ49kS2QTOwAHVwYnbPNVUT5Ua4R0ZrE2NHNHM5VmeyJmajVGZvw2VmpGRZVmZk1GR1YDZk9ie1VjUyFWalJGZLx0N58Uc",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgsTKf91Xf91Xf91Xf91Xf91Xf91XkgyXfRSP",
-	"gACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgACIgASPf9FJgACIgACIgACIgACIgACIgACIgACIgACIgACIgACI"
-];
-/*
- * ============================================
- * Mr999Plus PHP Encoder Script
- * ============================================
-*/
-$OO0000 = $O00OO0[7].$O00OO0[36].$O00OO0[29];
-$O00O0O = $O00OO0[3].$O00OO0[6].$O00OO0[33].$O00OO0[30];
-$O0OO00 = $O00OO0[30].$O00OO0[22].$O00OO0[24].$O00OO0[26].$O00OO0[24];
-$OO0O00 = $O0OO00[0].$O00OO0[18].$O00OO0[3].$O0OO00[0].$O0OO00[1].$O00OO0[24];
-$O00O00 = $O00O0O[2].$O00OO0[10].$O0OO00[2].$O00OO0[24].$O0OO00[0].$O00OO0[9];
-$O00O0O.= $O0OO00[1].$OO0000[1].$OO0000[2].$O0OO00[3].$O00O0O[3].$O00OO0[32].$O00OO0[35].$O00OO0[26].$OO0O00[3]; 
-/*
- * ============================================
- * Mr999Plus PHP Encoder Script
- * ============================================
-*/
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #f0f0f0;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-foreach($OO00OO0 as $OO00O0O){$OO0O0O0 .= $O00O0O0[$OO00O0O];}
-eval($O00O0O($O00O00($OO0O0O0)));
+        /* Container Styles */
+        .container {
+            max-width: 400px;
+            padding: 30px;
+            background: linear-gradient(145deg, #1e1e1e, #262626);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 6px 6px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            animation: fadeInAnimation 1.5s ease-in-out;
+        }
 
-?>
+        h1 {
+            color: #bb86fc;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #b0b0b0;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            background-color: #1c1c1c;
+            color: #fff;
+            font-size: 16px;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            box-shadow: 0 0 10px #bb86fc;
+            transform: scale(1.02);
+        }
+
+        button[type="submit"] {
+            background-color: #bb86fc;
+            color: #121212;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #3700b3;
+            box-shadow: 0px 5px 15px rgba(187, 134, 252, 0.5);
+            transform: scale(1.05);
+        }
+
+        button[type="submit"]:active {
+            transform: scale(0.95);
+        }
+
+        /* Result Styles */
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f28b82;
+            margin-top: 20px;
+            animation: fadeInAnimation 1s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Love Calculator</h1>
+        <form>
+            <label for="name1">Your Name:</label>
+            <input type="text" id="name1" name="name1" placeholder="Enter first name">
+            <label for="name2">She's Name:</label>
+            <input type="text" id="name2" name="name2" placeholder="Enter second name">
+            <button type="submit">Calculate Love</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const form = document.querySelector('form');
+        const resultDiv = document.querySelector('#result');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name1 = document.querySelector('#name1').value.toLowerCase();
+            const name2 = document.querySelector('#name2').value.toLowerCase();
+
+            if (name1 === "zesha" || name2 === "zesha") {
+                resultDiv.innerHTML = `<span style="color: #f28b82;">Team CYBER KNIGHT </span>`;
+            } else if (name1 && name2) {
+                // Simple love calculation algorithm (just for fun!)
+                const loveScore = calculateLoveScore(name1, name2);
+                animateLoveScore(name1, name2, loveScore);
+            } else {
+                resultDiv.innerHTML = `<span style="color: #f28b82;">Masukin Namanya TOLOL</span>`;
+            }
+        });
+
+        function calculateLoveScore(name1, name2) {
+            const combinedName = (name1 + name2).toLowerCase();
+            let score = 0;
+
+            for (let i = 0; i < combinedName.length; i++) {
+                score += combinedName.charCodeAt(i);
+            }
+
+            return Math.floor((score % 100) + 1);
+        }
+
+        function animateLoveScore(name1, name2, loveScore) {
+            let currentScore = 0;
+            resultDiv.innerHTML = ` <span style="color: #bb86fc;">${name1}</span> dan <span style="color: #bb86fc;">${name2}</span> <span id="score">0</span>%`;
+
+            const scoreSpan = document.querySelector('#score');
+
+            const interval = setInterval(() => {
+                scoreSpan.innerText = currentScore;
+                if (currentScore >= loveScore) {
+                    clearInterval(interval);
+                } else {
+                    currentScore++;
+                }
+            }, 30);
+        }
+    </script>
+</body>
+</html>
